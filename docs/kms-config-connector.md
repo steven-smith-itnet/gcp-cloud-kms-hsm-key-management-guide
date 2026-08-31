@@ -347,7 +347,7 @@ metadata:
 spec:
   project: platform
   source:
-    repoURL: https://github.com/itnet-steven-smith/gcp-key-management
+    repoURL: https://github.com/steven-smith-itnet/gcp-key-management
     targetRevision: main
     path: config-connector
   destination:

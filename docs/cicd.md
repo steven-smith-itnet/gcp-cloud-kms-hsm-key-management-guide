@@ -39,7 +39,7 @@ flowchart LR
 ```bash
 PROJECT=contoso-keymgmt-prod
 PN=$(gcloud projects describe "$PROJECT" --format="value(projectNumber)")
-REPO="itnet-steven-smith/gcp-key-management"
+REPO="steven-smith-itnet/gcp-key-management"
 
 # --- 1. The pool and provider ------------------------------------------------
 gcloud iam workload-identity-pools create github \
@@ -520,7 +520,7 @@ cat > .github/CODEOWNERS <<'OWNERS'
 /.github/workflows/     @contoso/security-engineering
 OWNERS
 
-gh api -X PUT repos/itnet-steven-smith/gcp-key-management/branches/main/protection \
+gh api -X PUT repos/steven-smith-itnet/gcp-key-management/branches/main/protection \
   --input - <<'JSON'
 {
   "required_status_checks": {
@@ -598,7 +598,7 @@ serviceAccount: projects/contoso-keymgmt-prod/serviceAccounts/cloudbuild-keymgmt
 gcloud builds triggers create github \
   --project=contoso-keymgmt-prod \
   --name=keymgmt-apply \
-  --repo-owner=itnet-steven-smith --repo-name=gcp-key-management \
+  --repo-owner=steven-smith-itnet --repo-name=gcp-key-management \
   --branch-pattern='^main$' \
   --build-config=cloudbuild.yaml \
   --require-approval \
