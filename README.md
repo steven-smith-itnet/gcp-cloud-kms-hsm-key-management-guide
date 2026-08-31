@@ -4,7 +4,7 @@ A sequential, command-level guide to planning, deploying, automating, and
 governing cryptographic key management on Google Cloud — from an empty
 organization through to a governed, monitored, HSM-backed production service.
 
-**📖 Read the guide: <https://smittystuff.github.io/gcp-cloud-kms-hsm-key-management-guide/>**
+**📖 Read the guide: <https://itnet-steven-smith.github.io/gcp-cloud-kms-hsm-key-management-guide/>**
 
 ---
 
@@ -61,8 +61,8 @@ The guide calls these out where they matter, because they change the design:
 This is one of three parallel guides sharing the same structure, so the same
 concept can be compared across providers:
 
-- [AWS KMS &amp; CloudHSM](https://github.com/SmittyStuff/aws-kms-cloudhsm-key-management-guide)
-- [Azure Key Vault &amp; Managed HSM](https://github.com/SmittyStuff/azure-key-vault-managed-hsm-key-management-guide)
+- [AWS KMS &amp; CloudHSM](https://github.com/itnet-steven-smith/aws-kms-cloudhsm-key-management-guide)
+- [Azure Key Vault &amp; Managed HSM](https://github.com/itnet-steven-smith/azure-key-vault-managed-hsm-key-management-guide)
 - **Google Cloud KMS &amp; Cloud HSM** — this repository
 
 ## Building locally

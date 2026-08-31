@@ -384,7 +384,7 @@ documentation:
   content: |
     Cloud KMS could not reach the external key manager. Every service using an
     EXTERNAL key is failing. Check the EKM, the network path, and the TLS
-    certificate. Runbook: https://smittystuff.github.io/gcp-cloud-kms-hsm-key-management-guide/docs/verification/
+    certificate. Runbook: https://itnet-steven-smith.github.io/gcp-cloud-kms-hsm-key-management-guide/docs/verification/
 conditions:
   - displayName: EKM errors above threshold
     conditionThreshold:

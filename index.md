@@ -112,8 +112,8 @@ flowchart LR
 
 This is one of three parallel guides covering cloud-native key management:
 
-- [AWS KMS &amp; CloudHSM](https://smittystuff.github.io/aws-kms-cloudhsm-key-management-guide/)
-- [Azure Key Vault &amp; Managed HSM](https://smittystuff.github.io/azure-key-vault-managed-hsm-key-management-guide/)
+- [AWS KMS &amp; CloudHSM](https://itnet-steven-smith.github.io/aws-kms-cloudhsm-key-management-guide/)
+- [Azure Key Vault &amp; Managed HSM](https://itnet-steven-smith.github.io/azure-key-vault-managed-hsm-key-management-guide/)
 - **Google Cloud KMS &amp; Cloud HSM** — this guide
 
 They share a structure deliberately, so the same concept can be compared across

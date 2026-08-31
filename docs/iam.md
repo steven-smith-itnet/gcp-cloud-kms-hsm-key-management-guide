@@ -328,7 +328,7 @@ gcloud iam workload-identity-pools providers create-oidc github-oidc \
   --project="$PROJECT" --location=global --workload-identity-pool=github \
   --issuer-uri="https://token.actions.githubusercontent.com" \
   --attribute-mapping="google.subject=assertion.sub,attribute.repository=assertion.repository,attribute.ref=assertion.ref" \
-  --attribute-condition="assertion.repository == 'SmittyStuff/gcp-key-management'"
+  --attribute-condition="assertion.repository == 'itnet-steven-smith/gcp-key-management'"
 
 gcloud iam service-accounts create gha-keymgmt --project="$PROJECT" \
   --display-name="GitHub Actions key management"
@@ -338,7 +338,7 @@ gcloud iam service-accounts add-iam-policy-binding \
   "gha-keymgmt@${PROJECT}.iam.gserviceaccount.com" \
   --project="$PROJECT" \
   --role="roles/iam.workloadIdentityUser" \
-  --member="principalSet://iam.googleapis.com/projects/${PN}/locations/global/workloadIdentityPools/github/attribute.repository/SmittyStuff/gcp-key-management"
+  --member="principalSet://iam.googleapis.com/projects/${PN}/locations/global/workloadIdentityPools/github/attribute.repository/itnet-steven-smith/gcp-key-management"
 ```
 
 {: .warning }
